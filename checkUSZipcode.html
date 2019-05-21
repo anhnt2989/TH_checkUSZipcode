@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra mã quốc gia nước Mỹ</title>
+</head>
+<body>
+            <script>
+                function is_USZipcode(str) {
+                    let regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+                    if (regexp.test(str)) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+                console.log(is_USZipcode("12415-6565"));
+                console.log(is_USZipcode("124145-12414"));
+            </script>
+</body>
+</html>
